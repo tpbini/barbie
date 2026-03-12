@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premier financial services company offering investment planning, wealth management, and retirement solutions. Build your financial future with expert guidance.">
+  <meta name="keywords" content="finance, investment, wealth management, retirement planning, financial advisor, investment services">
+  <meta name="author" content="FinancePro">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="FinancePro - Your Trusted Financial Partner">
+  <meta property="og:description" content="Expert financial services to help you build and protect your wealth.">
+  <meta property="og:type" content="website">
+  
+  <title>FinancePro - Your Trusted Financial Partner | Investment & Wealth Management</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>">
+</head>
+<body>
+  
+  <!-- Loading Screen -->
+  <div class="loading">
+    <div class="loading-spinner"></div>
+  </div>
+  
+  <!-- Header & Navigation -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">Finance<span>Pro</span></a>
+      
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Build Your Financial Future With Confidence</h1>
+          <p>Expert financial planning, investment strategies, and wealth management solutions tailored to your goals. Start your journey to financial freedom today.</p>
+          <div class="hero-buttons">
+            <a href="services.html" class="btn btn-accent">Our Services</a>
+            <a href="contact.html" class="btn btn-outline">Free Consultation</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=600&h=500&fit=crop" alt="Financial planning and investment growth">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Services Overview -->
+  <section class="section services-overview">
+    <div class="container">
+      <h2 class="section-title reveal">Our Financial Services</h2>
+      <p class="section-subtitle reveal">Comprehensive financial solutions designed to help you achieve your goals and secure your future</p>
+      
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">📊</div>
+          <h3>Investment Planning</h3>
+          <p>Strategic investment solutions tailored to your risk tolerance and financial objectives for optimal growth.</p>
+          <a href="services.html" class="service-link">Learn More →</a>
+        </div>
+        
+        <div class="service-card reveal">
+          <div class="service-icon">💼</div>
+          <h3>Wealth Management</h3>
+          <p>Comprehensive wealth management services to preserve and grow your assets across generations.</p>
+          <a href="services.html" class="service-link">Learn More →</a>
+        </div>
+        
+        <div class="service-card reveal">
+          <div class="service-icon">🏖️</div>
+          <h3>Retirement Planning</h3>
+          <p>Customized retirement strategies to ensure you enjoy the lifestyle you deserve in your golden years.</p>
+          <a href="services.html" class="service-link">Learn More →</a>
+        </div>
+        
+        <div class="service-card reveal">
+          <div class="service-icon">📋</div>
+          <h3>Tax Consulting</h3>
+          <p>Expert tax planning and optimization strategies to minimize liabilities and maximize returns.</p>
+          <a href="services.html" class="service-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Statistics Counter -->
+  <section class="section statistics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <h2 class="counter" data-target="25" data-suffix="+">0</h2>
+          <p>Years of Experience</p>
+        </div>
+        
+        <div class="stat-item reveal">
+          <h2 class="counter" data-target="15000" data-suffix="+">0</h2>
+          <p>Happy Clients</p>
+        </div>
+        
+        <div class="stat-item reveal">
+          <h2 class="counter" data-target="500" data-suffix="M+">$</h2>
+          <p>Assets Under Management</p>
+        </div>
+        
+        <div class="stat-item reveal">
+          <h2 class="counter" data-target="98" data-suffix="%">0</h2>
+          <p>Client Satisfaction Rate</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Investment Performance -->
+  <section class="section investment-performance">
+    <div class="container">
+      <div class="performance-content">
+        <div class="performance-chart reveal-left">
+          <canvas id="investmentChart"></canvas>
+        </div>
+        
+        <div class="performance-text reveal-right">
+          <h3>Proven Investment Performance</h3>
+          <p>Our expertly managed portfolios have consistently outperformed market benchmarks, delivering exceptional returns for our clients over the long term.</p>
+          
+          <ul class="performance-list">
+            <li>Average annual return of 12.5% over 10 years</li>
+            <li>Risk-adjusted returns exceeding industry standards</li>
+            <li>Diversified investment strategies across asset classes</li>
+            <li>Transparent reporting and regular performance reviews</li>
+          </ul>
+          
+          <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonials -->
+  <section class="section testimonials">
+    <div class="container">
+      <h2 class="section-title reveal">What Our Clients Say</h2>
+      <p class="section-subtitle reveal">Real stories from real clients who trusted us with their financial future</p>
+      
+      <div class="testimonials-slider reveal">
+        <div class="testimonial-slide active">
+          <p class="testimonial-text">"FinancePro transformed my approach to investing. Their personalized strategies and expert guidance helped me achieve my retirement goals 5 years ahead of schedule. I couldn't be happier with the results."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Michael Chen" class="author-avatar">
+            <div class="author-info">
+              <h4>Michael Chen</h4>
+              <p>Business Owner</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-slide">
+          <p class="testimonial-text">"The team at FinancePro provided invaluable guidance during a complex business sale. Their tax planning strategies saved me hundreds of thousands of dollars. Highly recommend their services!"</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Sarah Johnson" class="author-avatar">
+            <div class="author-info">
+              <h4>Sarah Johnson</h4>
+              <p>Entrepreneur</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-slide">
+          <p class="testimonial-text">"As a young professional, I was overwhelmed by investment options. FinancePro created a clear, actionable plan that aligned with my goals. Five years later, my portfolio has grown beyond my expectations."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop" alt="David Martinez" class="author-avatar">
+            <div class="author-info">
+              <h4>David Martinez</h4>
+              <p>Software Engineer</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Latest News -->
+  <section class="section news-section">
+    <div class="container">
+      <h2 class="section-title reveal">Latest Financial Insights</h2>
+      <p class="section-subtitle reveal">Stay informed with our latest articles on market trends, investment strategies, and financial planning tips</p>
+      
+      <div class="news-grid">
+        <article class="news-card reveal">
+          <div class="news-image">
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7238a3?w=400&h=250&fit=crop" alt="Stock market analysis">
+          </div>
+          <div class="news-content">
+            <span class="news-date">December 15, 2024</span>
+            <h3>Market Outlook 2025: Opportunities in Emerging Sectors</h3>
+            <p>Discover the key investment opportunities that experts are watching in the coming year...</p>
+            <a href="blog.html" class="read-more">Read More →</a>
+          </div>
+        </article>
+        
+        <article class="news-card reveal">
+          <div class="news-image">
+            <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&h=250&fit=crop" alt="Retirement planning">
+          </div>
+          <div class="news-content">
+            <span class="news-date">December 10, 2024</span>
+            <h3>Maximizing Your 401(k): Strategies for 2025</h3>
+            <p>Learn how to optimize your retirement contributions and take advantage of new limits...</p>
+            <a href="blog.html" class="read-more">Read More →</a>
+          </div>
+        </article>
+        
+        <article class="news-card reveal">
+          <div class="news-image">
+            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&h=250&fit=crop" alt="Tax planning">
+          </div>
+          <div class="news-content">
+            <span class="news-date">December 5, 2024</span>
+            <h3>Year-End Tax Planning: Last-Minute Strategies</h3>
+            <p>Essential tax-saving moves to consider before the end of the fiscal year...</p>
+            <a href="blog.html" class="read-more">Read More →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2 class="reveal">Ready to Take Control of Your Financial Future?</h2>
+      <p class="reveal">Schedule a free consultation with our expert advisors and discover how we can help you achieve your goals</p>
+      <a href="contact.html" class="btn btn-outline reveal">Get Started Today</a>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>FinancePro</h3>
+          <p>Your trusted partner in building and preserving wealth. Expert financial advice tailored to your unique needs.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Facebook">f</a>
+            <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="blog.html">Financial Insights</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Services</h3>
+          <ul class="footer-links">
+            <li><a href="services.html">Investment Planning</a></li>
+            <li><a href="services.html">Wealth Management</a></li>
+            <li><a href="services.html">Retirement Planning</a></li>
+            <li><a href="services.html">Tax Consulting</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Contact Info</h3>
+          <ul class="footer-links">
+            <li>📍 123 Wall Street, New York, NY 10005</li>
+            <li>📞 (555) 123-4567</li>
+            <li>✉️ info@financepro.com</li>
+            <li>🕒 Mon-Fri: 9AM - 6PM</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 FinancePro. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <!-- Main JavaScript -->
+  <script src="js/script.js"></script>
+  
+  <!-- Initialize Chart -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initInvestmentChart();
+    });
+  </script>
+  
+</body>
+</html>
